@@ -22,8 +22,17 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           {% if user.is_authenticated %}
+{#          <li>#}
+{#            <a class="nav-item nav-link" href="{% url 'register:user_detail' user.pk %}">ユーザー情報閲覧</a>#}
+{#          </li>#}
+{#          <li>#}
+{#            <a class="nav-item nav-link" href="{% url 'register:user_update' user.pk %}">ユーザー情報更新</a>#}
+{#          </li>#}
           <li>
             <a class="nav-item nav-link" href="{% url 'register:logout' %}">ログアウト</a>
+          </li>
+          <li>
+            <a class="nav-item nav-link" href="{% url 'register:password_change' %}">パスワードの変更</a>
           </li>
           {% else %}
           <li class="nav-item">
