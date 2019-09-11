@@ -129,5 +129,11 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
-# registerアプリケーション
+# Userモデルをregisterアプリケーション内のUserに
 AUTH_USER_MODEL = 'register.User'
+
+LOGIN_URL = 'register:login'
+LOGIN_REDIRECT_URL = 'register:top'
+
+# メール設定
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
