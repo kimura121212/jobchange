@@ -1,0 +1,38 @@
+{% extends "register/base_auth.html" %}
+{% block content %}
+    <div>{{ company.company_name }}</div>
+<form method="post" action="">
+{% csrf_token %}
+    <div class="form-group">
+        <p>{{ form.errors.selection_phase }}</p>
+      　<label for="company_name">{{form.selection_phase.label}}</label>
+      　{{form.selection_phase}}
+  　</div>
+    <div class="form-group">
+    　  <p>{{ form.errors.company_name }}</p>
+      　<label for="company_name">{{form.company_name.label}}</label>
+      　{{form.company_name}}
+  　</div>
+    <div class="form-group">
+    　  <p>{{ form.errors.selection_date }}</p>
+      　<label for="company_name">{{form.selection_date.label}}</label>
+      　{{form.selection_date}}
+  　</div>
+    <div class="form-group">
+    　  <p>{{ form.errors.question }}</p>
+      　<label for="company_name">{{form.question.label}}</label>
+      　{{form.question}}
+  　</div>
+    <div class="form-group">
+    　  <p>{{ form.errors.reflection }}</p>
+      　<label for="company_name">{{form.reflection.label}}</label>
+      　{{form.reflection}}
+  　</div>
+    <div class="form-group">
+    　  <p>{{ form.errors.other }}</p>
+      　<label for="company_name">{{form.other.label}}</label>
+      　{{form.other}}
+  　</div>
+  <button type="submit" class="btn btn-primary">登録</button>
+</form>
+{% endblock %}

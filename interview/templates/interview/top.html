@@ -1,0 +1,18 @@
+{% extends "register/base_auth.html" %}
+{% block content %}
+    <p>{{ company.company_name }}</p>
+    <a href="{% url "interview:register" company.id  %}">新規登録</a>
+    {% if interviewes %}
+    {% for interview in interviewes %}
+        <div>選考フェーズ : {{ interview.selection_phase }}</div>
+        <div>選考日程 : {{ interview.selection_phase }}</div>
+        <div>質問と覚えていればその回答 : {{ interview.selection_phase }}</div>
+        <div>振り返り : {{ interview.selection_phase }}</div>
+        <div>その他 : {{ interview.selection_phase }}</div>
+{#        <a href="{% url "interview:update" %}">変更</a>#}
+{#        <a href="{% url "interview:delete" %}">削除</a>#}
+    {% endfor %}
+    {% else %}
+        <div>データがありません</div>
+    {% endif %}
+{% endblock %}
