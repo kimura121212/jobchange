@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bootstrap4',
     'register',
+    'company',
 ]
 
 MIDDLEWARE = [
@@ -133,7 +134,7 @@ STATIC_URL = '/static/'
 AUTH_USER_MODEL = 'register.User'
 
 LOGIN_URL = 'register:login'
-LOGIN_REDIRECT_URL = 'register:top'
+LOGIN_REDIRECT_URL = 'company:top'
 
 # メール設定
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
