@@ -9,11 +9,30 @@ from django.shortcuts import redirect
 from django.urls import reverse_lazy
 from django.template.loader import render_to_string
 from django.views import generic
-# from .forms import (
-#
-# )
+from .models import Company
+from .forms import CompanyRegisterForm
 
 User = get_user_model()
 
-class Top(generic.TemplateView):
+class CompanyTop(generic.TemplateView):
     template_name = 'company/top.html'
+
+class CompanyRegister(generic.View):
+    form_class = CompanyRegisterForm
+    template_name = 'company/company_register.html'
+
+    def get(self, request, *args, **kwargs):
+        form = self.form_class
+        return render(request, self.template_name, {'form': form})
+
+    def post(self, request, *args, **kwargs):
+        form = self.form_class(request.POST)
+        if form.is_valid():
+            company_name = form.cleaned_data['company_name']
+            login_user = request.user
+            Company.objects.create(company_name=company_name, user_id=login_user)
+            return redirect('company:register_complete')
+        return render(request, self.template_name, {'form': form})
+
+class CompanyRegisterComplete(generic.TemplateView):
+    template_name = 'company/company_register_complete.html'
