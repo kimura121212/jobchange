@@ -23,6 +23,7 @@ class CompanyTop(generic.TemplateView):
         context['companies'] = Company.objects.filter(user_id=login_user).values
         return context
 
+
 class CompanyRegister(generic.View):
     form_class = CompanyRegisterForm
     template_name = 'company/company_register.html'
@@ -40,8 +41,10 @@ class CompanyRegister(generic.View):
             return redirect('company:register_complete')
         return render(request, self.template_name, {'form': form})
 
+
 class CompanyRegisterComplete(generic.TemplateView):
     template_name = 'company/company_register_complete.html'
+
 
 class CompanyUpdate(generic.TemplateView):
     form_class = CompanyUpdateForm
@@ -64,5 +67,15 @@ class CompanyUpdate(generic.TemplateView):
             return redirect('company:update_complete')
         return render(request, self.template_name, {'form': form})
 
+
 class CompanyUpdateComplete(generic.TemplateView):
     template_name = 'company/company_update_complete.html'
+
+
+class CompanyDelete(generic.TemplateView):
+    template_name = 'company/company_delete_complete.html'
+
+    def get(self, request, *args, **kwargs):
+        pk = self.kwargs['pk']
+        Company.objects.get(id=pk).delete()
+        return render(request, self.template_name)

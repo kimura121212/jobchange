@@ -15,7 +15,7 @@
       <th scope="row">{{ company.company_name }}</th>
       <td>詳細</td>
       <td><a href="{% url 'company:update' company.id %}">変更</a></td>
-      <td>削除{{ company.id }}</td>
+      <td><a href="{% url 'company:delete' company.id %}">削除</a></td>
     </tr>
   {% endfor %}
   </tbody>
