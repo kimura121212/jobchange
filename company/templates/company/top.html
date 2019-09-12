@@ -10,24 +10,14 @@
     </tr>
   </thead>
   <tbody>
+  {% for company in companies %}
     <tr>
-      <th scope="row">株式会社イードア</th>
-      <td>詳細</td>
-      <td>変更</td>
-      <td>削除</td>
+      <th scope="row">{{ company.company_name }}</th>
+      <td>詳細{{ company.id }}</td>
+      <td>変更{{ company.id }}</td>
+      <td>削除{{ company.id }}</td>
     </tr>
-    <tr>
-      <th scope="row">株式会社北の達人コーポレーション</th>
-      <td>詳細</td>
-      <td>変更</td>
-      <td>削除</td>
-    </tr>
-    <tr>
-      <th scope="row">株式会社チームラボエンジニアリング</th>
-      <td>詳細</td>
-      <td>変更</td>
-      <td>削除</td>
-    </tr>
+  {% endfor %}
   </tbody>
 </table>
 {% endblock %}

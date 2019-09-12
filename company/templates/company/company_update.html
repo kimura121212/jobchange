@@ -1,0 +1,12 @@
+{% extends "register/base_auth.html" %}
+{% block content %}
+<form method="post" action="">
+{% csrf_token %}
+  <div class="form-group">
+      <p>{{ form.errors.company_name }}</p>
+      <label for="company_name">{{form.company_name.label}}</label>
+      {{form.company_name}}
+  </div>
+  <button type="submit" class="btn btn-primary">変更</button>
+</form>
+{% endblock %}

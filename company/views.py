@@ -10,12 +10,18 @@ from django.urls import reverse_lazy
 from django.template.loader import render_to_string
 from django.views import generic
 from .models import Company
-from .forms import CompanyRegisterForm
+from .forms import CompanyRegisterForm, CompanyUpdateForm
 
 User = get_user_model()
 
 class CompanyTop(generic.TemplateView):
     template_name = 'company/top.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        login_user = self.request.user
+        context['companies'] = Company.objects.filter(user_id=login_user).values
+        return context
 
 class CompanyRegister(generic.View):
     form_class = CompanyRegisterForm
