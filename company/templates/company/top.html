@@ -13,8 +13,8 @@
   {% for company in companies %}
     <tr>
       <th scope="row">{{ company.company_name }}</th>
-      <td>詳細{{ company.id }}</td>
-      <td>変更{{ company.id }}</td>
+      <td>詳細</td>
+      <td><a href="{% url 'company:update' company.id %}">変更</a></td>
       <td>削除{{ company.id }}</td>
     </tr>
   {% endfor %}

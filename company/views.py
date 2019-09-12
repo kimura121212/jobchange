@@ -42,3 +42,27 @@ class CompanyRegister(generic.View):
 
 class CompanyRegisterComplete(generic.TemplateView):
     template_name = 'company/company_register_complete.html'
+
+class CompanyUpdate(generic.TemplateView):
+    form_class = CompanyUpdateForm
+    template_name = 'company/company_update.html'
+
+    def get(self, request, *args, **kwargs):
+        pk = self.kwargs['pk']
+        company = Company.objects.get(id=pk)
+        form = self.form_class(instance=company)
+        return render(request, self.template_name, {'form': form})
+
+    def post(self, request, *args, **kwargs):
+        form = self.form_class(request.POST)
+        if form.is_valid():
+            company_name = form.cleaned_data['company_name']
+            pk = self.kwargs['pk']
+            company = Company.objects.get(id=pk)
+            company.company_name = company_name
+            company.save()
+            return redirect('company:update_complete')
+        return render(request, self.template_name, {'form': form})
+
+class CompanyUpdateComplete(generic.TemplateView):
+    template_name = 'company/company_update_complete.html'
