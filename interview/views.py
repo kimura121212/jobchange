@@ -54,38 +54,47 @@ class InterviewRegister(generic.View):
 
 class InterviewRegisterComplete(generic.TemplateView):
     template_name = 'interview/interview_register_complete.html'
-#
-#
-# class InterviewUpdate(generic.TemplateView):
-#     form_class = InterviewUpdateForm
-#     template_name = 'interview/interview_update.html'
-#
-#     def get(self, request, *args, **kwargs):
-#         pk = self.kwargs['pk']
-#         interview = Interview.objects.get(id=pk)
-#         form = self.form_class(instance=interview)
-#         return render(request, self.template_name, {'form': form})
-#
-#     def post(self, request, *args, **kwargs):
-#         form = self.form_class(request.POST)
-#         if form.is_valid():
-#             interview_name = form.cleaned_data['interview_name']
-#             pk = self.kwargs['pk']
-#             interview = Interview.objects.get(id=pk)
-#             interview.company_name = company_name
-#             interview.save()
-#             return redirect('interview:update_complete')
-#         return render(request, self.template_name, {'form': form})
-#
-#
-# class InterviewUpdateComplete(generic.TemplateView):
-#     template_name = 'interview/interview_update_complete.html'
-#
-#
-# class InterviewDelete(generic.TemplateView):
-#     template_name = 'interview/interview_delete_complete.html'
-#
-#     def get(self, request, *args, **kwargs):
-#         pk = self.kwargs['pk']
-#         Interview.objects.get(id=pk).delete()
-#         return render(request, self.template_name)
+
+
+class InterviewUpdate(generic.TemplateView):
+    form_class = InterviewUpdateForm
+    template_name = 'interview/interview_update.html'
+
+    def get(self, request, *args, **kwargs):
+        pk = self.kwargs['pk']
+        interview = Interview.objects.get(id=pk)
+        interview_obj = interview
+        form = self.form_class(instance=interview)
+        return render(request, self.template_name, {'form': form, 'interview_obj': interview_obj})
+
+    def post(self, request, *args, **kwargs):
+        form = self.form_class(request.POST)
+        if form.is_valid():
+            selection_phase = form.cleaned_data['selection_phase']
+            selection_date = form.cleaned_data['selection_date']
+            question = form.cleaned_data['question']
+            reflection = form.cleaned_data['reflection']
+            other = form.cleaned_data['other']
+            pk = self.kwargs['pk']
+            interview = Interview.objects.get(id=pk)
+            interview.selection_phase = selection_phase
+            interview.selection_date = selection_date
+            interview.question = question
+            interview.reflection = reflection
+            interview.other = other
+            interview.save()
+            return redirect('interview:update_complete')
+        return render(request, self.template_name, {'form': form})
+
+
+class InterviewUpdateComplete(generic.TemplateView):
+    template_name = 'interview/interview_update_complete.html'
+
+
+class InterviewDelete(generic.TemplateView):
+    template_name = 'interview/interview_delete_complete.html'
+
+    def get(self, request, *args, **kwargs):
+        pk = self.kwargs['pk']
+        Interview.objects.get(id=pk).delete()
+        return render(request, self.template_name)

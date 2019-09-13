@@ -5,12 +5,12 @@
     {% if interviewes %}
     {% for interview in interviewes %}
         <div>選考フェーズ : {{ interview.selection_phase }}</div>
-        <div>選考日程 : {{ interview.selection_phase }}</div>
-        <div>質問と覚えていればその回答 : {{ interview.selection_phase }}</div>
-        <div>振り返り : {{ interview.selection_phase }}</div>
-        <div>その他 : {{ interview.selection_phase }}</div>
-{#        <a href="{% url "interview:update" %}">変更</a>#}
-{#        <a href="{% url "interview:delete" %}">削除</a>#}
+        <div>選考日程 : {{ interview.selection_date }}</div>
+        <div>質問と覚えていればその回答 : {{ interview.question }}</div>
+        <div>振り返り : {{ interview.reflection }}</div>
+        <div>その他 : {{ interview.other }}</div>
+        <a href="{% url "interview:update" interview.id %}">変更</a>
+        <a href="{% url "interview:delete" interview.id %}">削除</a>
     {% endfor %}
     {% else %}
         <div>データがありません</div>
