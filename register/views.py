@@ -20,17 +20,16 @@ from .forms import (
 User = get_user_model()
 
 class Top(generic.TemplateView):
-    """初期画面"""
     template_name = 'register/top.html'
 
 class Login(LoginView):
-    """ログインページ"""
+    """ログイン"""
     form_class = LoginForm
     template_name = 'register/login.html'
 
 
 class Logout(LoginRequiredMixin, LogoutView):
-    """ログアウトページ"""
+    """ログアウト"""
     template_name = 'company/top.html'
 
 
@@ -40,9 +39,7 @@ class UserCreate(generic.CreateView):
     form_class = UserCreateForm
 
     def form_valid(self, form):
-        """仮登録と本登録用メールの発行."""
-        # 仮登録と本登録の切り替えは、is_active属性を使うと簡単です。
-        # 退会処理も、is_activeをFalseにするだけにしておくと捗ります。
+        """仮登録と本登録用メールの発行"""
         user = form.save(commit=False)
         user.is_active = False
         user.save()
@@ -65,30 +62,26 @@ class UserCreate(generic.CreateView):
 
 
 class UserCreateDone(generic.TemplateView):
-    """ユーザー仮登録したよ"""
+    """ユーザー仮登録完了"""
     template_name = 'register/user_create_done.html'
 
 
 class UserCreateComplete(generic.TemplateView):
-    """メール内URLアクセス後のユーザー本登録"""
+    """ユーザー本登録"""
     template_name = 'register/user_create_complete.html'
     timeout_seconds = getattr(settings, 'ACTIVATION_TIMEOUT_SECONDS', 60*60*24)  # デフォルトでは1日以内
 
     def get(self, request, **kwargs):
-        """tokenが正しければ本登録."""
         token = kwargs.get('token')
         try:
             user_pk = loads(token, max_age=self.timeout_seconds)
 
-        # 期限切れ
         except SignatureExpired:
             return HttpResponseBadRequest()
 
-        # tokenが間違っている
         except BadSignature:
             return HttpResponseBadRequest()
 
-        # tokenは問題なし
         else:
             try:
                 user = User.objects.get(pk=user_pk)
@@ -96,7 +89,6 @@ class UserCreateComplete(generic.TemplateView):
                 return HttpResponseBadRequest()
             else:
                 if not user.is_active:
-                    # 問題なければ本登録とする
                     user.is_active = True
                     user.save()
                     return super().get(request, **kwargs)
@@ -104,17 +96,17 @@ class UserCreateComplete(generic.TemplateView):
         return HttpResponseBadRequest()
 
 class PasswordChange(PasswordChangeView):
-    """パスワード変更ビュー"""
+    """パスワード変更"""
     form_class = MyPasswordChangeForm
     success_url = reverse_lazy('register:password_change_done')
     template_name = 'register/password_change.html'
 
 class PasswordChangeDone(PasswordChangeDoneView):
-    """パスワード変更しました"""
+    """パスワード変更完了"""
     template_name = 'register/password_change_done.html'
 
 class PasswordReset(PasswordResetView):
-    """パスワード変更用URLの送付ページ"""
+    """パスワード変更用URLの送付"""
     subject_template_name = 'register/mail_template/password_reset/subject.txt'
     email_template_name = 'register/mail_template/password_reset/message.txt'
     template_name = 'register/password_reset_form.html'
@@ -123,23 +115,23 @@ class PasswordReset(PasswordResetView):
 
 
 class PasswordResetDone(PasswordResetDoneView):
-    """パスワード変更用URLを送りましたページ"""
+    """パスワード変更用URL送付完了"""
     template_name = 'register/password_reset_done.html'
 
 
 class PasswordResetConfirm(PasswordResetConfirmView):
-    """新パスワード入力ページ"""
+    """新パスワード入力"""
     form_class = MySetPasswordForm
     success_url = reverse_lazy('register:password_reset_complete')
     template_name = 'register/password_reset_confirm.html'
 
 
 class PasswordResetComplete(PasswordResetCompleteView):
-    """新パスワード設定しましたページ"""
+    """新パスワード設定完了"""
     template_name = 'register/password_reset_complete.html'
 
 class EmailChange(LoginRequiredMixin, generic.FormView):
-    """メールアドレスの変更"""
+    """メールアドレス変更"""
     template_name = 'register/email_change_form.html'
     form_class = EmailChangeForm
 
@@ -147,7 +139,6 @@ class EmailChange(LoginRequiredMixin, generic.FormView):
         user = self.request.user
         new_email = form.cleaned_data['email']
 
-        # URLの送付
         current_site = get_current_site(self.request)
         domain = current_site.domain
         context = {
@@ -165,12 +156,12 @@ class EmailChange(LoginRequiredMixin, generic.FormView):
 
 
 class EmailChangeDone(LoginRequiredMixin, generic.TemplateView):
-    """メールアドレスの変更メールを送ったよ"""
+    """メールアドレス変更メール送信完了"""
     template_name = 'register/email_change_done.html'
 
 
 class EmailChangeComplete(LoginRequiredMixin, generic.TemplateView):
-    """リンクを踏んだ後に呼ばれるメアド変更ビュー"""
+    """メールアドレス変更完了"""
     template_name = 'register/email_change_complete.html'
     timeout_seconds = getattr(settings, 'ACTIVATION_TIMEOUT_SECONDS', 60*60*24)  # デフォルトでは1日以内
 
@@ -179,15 +170,12 @@ class EmailChangeComplete(LoginRequiredMixin, generic.TemplateView):
         try:
             new_email = loads(token, max_age=self.timeout_seconds)
 
-        # 期限切れ
         except SignatureExpired:
             return HttpResponseBadRequest()
 
-        # tokenが間違っている
         except BadSignature:
             return HttpResponseBadRequest()
 
-        # tokenは問題なし
         else:
             User.objects.filter(email=new_email, is_active=False).delete()
             request.user.email = new_email

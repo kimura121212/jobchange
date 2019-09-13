@@ -13,10 +13,7 @@ class AnswerTop(generic.TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         login_user = self.request.user
-        # try:
         context['answeres'] = Answer.objects.filter(user_id=login_user).values
-        # except:
-        #     context['answeres'] = None
         return context
 
 
