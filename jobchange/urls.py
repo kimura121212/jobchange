@@ -21,4 +21,5 @@ urlpatterns = [
     path('', include('register.urls')),
     path('company/', include('company.urls')),
     path('interview/', include('interview.urls')),
+    path('answer/', include('answer.urls')),
 ]

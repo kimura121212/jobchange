@@ -1,0 +1,15 @@
+{% extends "register/base_auth.html" %}
+{% block content %}
+    <p>質問・回答集</p>
+    <a href="{% url "answer:register" %}">新規登録</a>
+    {% if answeres %}
+    {% for answer in answeres %}
+        <div>質問 : {{ answer.question }}</div>
+        <div>回答 : {{ answer.answer }}</div>
+        <a href="{% url "answer:update" answer.id %}">変更</a>
+        <a href="{% url "answer:delete" answer.id %}">削除</a>
+    {% endfor %}
+    {% else %}
+        <div>データがありません</div>
+    {% endif %}
+{% endblock %}
