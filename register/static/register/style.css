@@ -2,6 +2,7 @@ body{
     background-color:#F2F2F2!important;
 }
 
+/* /(トップページ) */
 .top{
     height:100vh;
     background-image: url("background.jpg");
@@ -16,7 +17,7 @@ body{
 }
 .top_contents{
     text-align: center;
-    padding-top: 25%;
+    padding-top: 30%;
 }
 @media screen and (max-width: 640px){
     .top_contents{
@@ -31,3 +32,21 @@ body{
 .top_button{
     width: 300px;
 }
+/* /(トップページ) */
+.margin_auto{
+    margin:auto;
+}
+
+/* /login(ログインページ) */
+.hr{
+    border-color: #ffffff;
+}
+.login_title{
+    text-align: center;
+    font-weight:bold;
+}
+.login_link{
+    display: block;
+    text-align: center;
+}
+/* /login(ログインページ) */
