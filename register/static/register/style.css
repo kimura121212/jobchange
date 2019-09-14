@@ -1,3 +1,33 @@
 body{
     background-color:#F2F2F2!important;
 }
+
+.top{
+    height:100vh;
+    background-image: url("background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.top_title{
+    font-weight: bold;
+    font-size:4rem;
+    color: #ffffff;
+}
+.top_contents{
+    text-align: center;
+    padding-top: 25%;
+}
+@media screen and (max-width: 640px){
+    .top_contents{
+        padding-top: 50%;
+    }
+}
+@media screen and (min-width: 640px){
+    .top_contents{
+        padding-top: 15%;
+    }
+}
+.top_button{
+    width: 300px;
+}
