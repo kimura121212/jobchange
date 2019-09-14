@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2bd32518-a0ea-40a8-88bc-6e2117666e01" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register/static/register/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/register/static/register/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register/templates/register/email_change_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/register/templates/register/email_change_complete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register/templates/register/email_change_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/register/templates/register/email_change_done.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register/templates/register/email_change_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/register/templates/register/email_change_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register/templates/register/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/register/templates/register/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register/templates/register/mail_template/create/message.txt" beforeDir="false" afterPath="$PROJECT_DIR$/register/templates/register/mail_template/create/message.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register/templates/register/password_change.html" beforeDir="false" afterPath="$PROJECT_DIR$/register/templates/register/password_change.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register/templates/register/password_change_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/register/templates/register/password_change_done.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register/templates/register/password_reset_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/register/templates/register/password_reset_complete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register/templates/register/password_reset_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/register/templates/register/password_reset_confirm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register/templates/register/password_reset_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/register/templates/register/password_reset_done.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register/templates/register/password_reset_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/register/templates/register/password_reset_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register/templates/register/user_create.html" beforeDir="false" afterPath="$PROJECT_DIR$/register/templates/register/user_create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register/templates/register/user_create_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/register/templates/register/user_create_complete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register/templates/register/user_create_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/register/templates/register/user_create_done.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/templates/company/top.html" beforeDir="false" afterPath="$PROJECT_DIR$/company/templates/company/top.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register/templates/register/base_auth.html" beforeDir="false" afterPath="$PROJECT_DIR$/register/templates/register/base_auth.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,14 +15,14 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4341637">
+    <splitter split-orientation="horizontal" split-proportion="0.53994954">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/register/templates/register/login.html">
+            <entry file="file://$PROJECT_DIR$/company/templates/company/top.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+                <state relative-caret-position="300">
+                  <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -46,10 +32,10 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/register/templates/register/password_reset_form.html">
+            <entry file="file://$PROJECT_DIR$/register/static/register/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+                <state relative-caret-position="266">
+                  <caret line="43" column="12" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
@@ -66,6 +52,7 @@
       <find>static</find>
       <find>send_mail</find>
       <find>interview_obj</find>
+      <find>hr</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -83,7 +70,6 @@
         <option value="$PROJECT_DIR$/company/forms.py" />
         <option value="$PROJECT_DIR$/company/urls.py" />
         <option value="$PROJECT_DIR$/company/views.py" />
-        <option value="$PROJECT_DIR$/company/templates/company/top.html" />
         <option value="$PROJECT_DIR$/interview/templates/interview/interview_register.html" />
         <option value="$PROJECT_DIR$/interview/forms.py" />
         <option value="$PROJECT_DIR$/interview/templates/interview/interview_register_complete.html" />
@@ -105,7 +91,6 @@
         <option value="$PROJECT_DIR$/answer/templates/answer/answer_delete_complete.html" />
         <option value="$PROJECT_DIR$/answer/views.py" />
         <option value="$PROJECT_DIR$/register/static/register/css/style.css" />
-        <option value="$PROJECT_DIR$/register/templates/register/base_auth.html" />
         <option value="$PROJECT_DIR$/jobchange/settings.py" />
         <option value="$PROJECT_DIR$/register/views.py" />
         <option value="$PROJECT_DIR$/register/models.py" />
@@ -125,6 +110,8 @@
         <option value="$PROJECT_DIR$/register/templates/register/password_reset_complete.html" />
         <option value="$PROJECT_DIR$/register/templates/register/password_reset_done.html" />
         <option value="$PROJECT_DIR$/register/templates/register/user_create.html" />
+        <option value="$PROJECT_DIR$/register/templates/register/base_auth.html" />
+        <option value="$PROJECT_DIR$/company/templates/company/top.html" />
       </list>
     </option>
   </component>
@@ -151,11 +138,37 @@
             <path>
               <item name="jobchange" type="b2602c69:ProjectViewProjectNode" />
               <item name="jobchange" type="462c0819:PsiDirectoryNode" />
-              <item name="jobchange" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jobchange" type="b2602c69:ProjectViewProjectNode" />
               <item name="jobchange" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobchange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobchange" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobchange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobchange" type="462c0819:PsiDirectoryNode" />
+              <item name="register" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobchange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobchange" type="462c0819:PsiDirectoryNode" />
+              <item name="register" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobchange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobchange" type="462c0819:PsiDirectoryNode" />
+              <item name="register" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="register" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -170,14 +183,6 @@
               <item name="register" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="register" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobchange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobchange" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
-              <item name="mail_template" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -257,18 +262,18 @@
       <workItem from="1568280822110" duration="1818000" />
       <workItem from="1568296987315" duration="11535000" />
       <workItem from="1568358671991" duration="13776000" />
-      <workItem from="1568476979051" duration="2359000" />
+      <workItem from="1568476979051" duration="3438000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45697000" />
+    <option name="totallyTimeSpent" value="46776000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="19" y="28" width="1401" height="839" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17292127" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12509198" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -318,16 +323,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/interview/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/interview/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -390,13 +385,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interview/templates/interview/top.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -535,13 +523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/register/templates/register/base_auth.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/register/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -585,13 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register/static/register/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -674,15 +648,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/register/templates/register/password_reset_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        <state relative-caret-position="330">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interview/templates/interview/top.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/register/templates/register/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        <state relative-caret-position="165">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register/templates/register/base_auth.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="31" column="61" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register/static/register/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="43" column="12" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company/templates/company/top.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
         </state>
       </provider>
     </entry>

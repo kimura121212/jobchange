@@ -23,10 +23,10 @@
         <ul class="navbar-nav mr-auto">
           {% if user.is_authenticated %}
           <li>
-            <a class="nav-item nav-link" href="{% url 'company:register' %}">企業登録</a>
+            <a class="nav-item nav-link" href="{% url 'company:register' %}">面接企業登録</a>
           </li>
           <li>
-            <a class="nav-item nav-link" href="{% url 'answer:top' %}">質問・回答</a>
+            <a class="nav-item nav-link" href="{% url 'answer:top' %}">面接質問・回答登録</a>
           </li>
           <li>
             <a class="nav-item nav-link" href="{% url 'register:email_change' %}">メールアドレスの変更</a>
