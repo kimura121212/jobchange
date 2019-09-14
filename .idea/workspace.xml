@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2bd32518-a0ea-40a8-88bc-6e2117666e01" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/company/templates/company/top.html" beforeDir="false" afterPath="$PROJECT_DIR$/company/templates/company/top.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/register/templates/register/base_auth.html" beforeDir="false" afterPath="$PROJECT_DIR$/register/templates/register/base_auth.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,11 +17,20 @@
     <splitter split-orientation="horizontal" split-proportion="0.53994954">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/company/templates/company/top.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+                <state relative-caret-position="75">
+                  <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/register/templates/register/base_auth.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="256">
+                  <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -110,8 +118,8 @@
         <option value="$PROJECT_DIR$/register/templates/register/password_reset_complete.html" />
         <option value="$PROJECT_DIR$/register/templates/register/password_reset_done.html" />
         <option value="$PROJECT_DIR$/register/templates/register/user_create.html" />
-        <option value="$PROJECT_DIR$/register/templates/register/base_auth.html" />
         <option value="$PROJECT_DIR$/company/templates/company/top.html" />
+        <option value="$PROJECT_DIR$/register/templates/register/base_auth.html" />
       </list>
     </option>
   </component>
@@ -262,12 +270,12 @@
       <workItem from="1568280822110" duration="1818000" />
       <workItem from="1568296987315" duration="11535000" />
       <workItem from="1568358671991" duration="13776000" />
-      <workItem from="1568476979051" duration="3438000" />
+      <workItem from="1568476979051" duration="3597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46776000" />
+    <option name="totallyTimeSpent" value="46935000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="19" y="28" width="1401" height="839" extended-state="0" />
@@ -667,13 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/register/templates/register/base_auth.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="31" column="61" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/register/static/register/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -683,8 +684,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/company/templates/company/top.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        <state relative-caret-position="75">
+          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register/templates/register/base_auth.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
         </state>
       </provider>
     </entry>
