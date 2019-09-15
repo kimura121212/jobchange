@@ -3,34 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2bd32518-a0ea-40a8-88bc-6e2117666e01" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/answer/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/answer/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/answer/templates/answer/answer_delete_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/answer/templates/answer/answer_delete_complete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/answer/templates/answer/answer_register.html" beforeDir="false" afterPath="$PROJECT_DIR$/answer/templates/answer/answer_register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/answer/templates/answer/answer_register_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/answer/templates/answer/answer_register_complete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/answer/templates/answer/answer_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/answer/templates/answer/answer_update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/answer/templates/answer/answer_update_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/answer/templates/answer/answer_update_complete.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/answer/templates/answer/top.html" beforeDir="false" afterPath="$PROJECT_DIR$/answer/templates/answer/top.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/templates/company/company_delete_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/company/templates/company/company_delete_complete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/templates/company/company_register.html" beforeDir="false" afterPath="$PROJECT_DIR$/company/templates/company/company_register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/templates/company/company_register_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/company/templates/company/company_register_complete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/templates/company/company_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/company/templates/company/company_update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/templates/company/company_update_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/company/templates/company/company_update_complete.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/company/templates/company/top.html" beforeDir="false" afterPath="$PROJECT_DIR$/company/templates/company/top.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interview/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/interview/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interview/templates/interview/interview_delete_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/interview/templates/interview/interview_delete_complete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interview/templates/interview/interview_register.html" beforeDir="false" afterPath="$PROJECT_DIR$/interview/templates/interview/interview_register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interview/templates/interview/interview_register_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/interview/templates/interview/interview_register_complete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interview/templates/interview/interview_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/interview/templates/interview/interview_update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interview/templates/interview/interview_update_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/interview/templates/interview/interview_update_complete.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interview/templates/interview/top.html" beforeDir="false" afterPath="$PROJECT_DIR$/interview/templates/interview/top.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register/templates/register/base_auth.html" beforeDir="false" afterPath="$PROJECT_DIR$/register/templates/register/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register/templates/register/email_change_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/register/templates/register/email_change_complete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register/templates/register/email_change_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/register/templates/register/email_change_done.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register/templates/register/email_change_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/register/templates/register/email_change_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register/templates/register/password_change.html" beforeDir="false" afterPath="$PROJECT_DIR$/register/templates/register/password_change.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register/templates/register/password_change_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/register/templates/register/password_change_done.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register/templates/register/top.html" beforeDir="false" afterPath="$PROJECT_DIR$/register/templates/register/top.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/register/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,14 +17,14 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.38402063">
+    <splitter split-orientation="horizontal" split-proportion="0.45514706">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/answer/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+                <state relative-caret-position="120">
+                  <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
                   <folding>
                     <element signature="e#0#28#0" expanded="true" />
                   </folding>
@@ -58,28 +33,22 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/interview/templates/interview/interview_register.html">
+            <entry file="file://$PROJECT_DIR$/company/templates/company/top.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="67" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/interview/templates/interview/interview_register_complete.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+                <state relative-caret-position="139">
+                  <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#1327#1334#1#HTML" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/interview/templates/interview/interview_update.html">
+            <entry file="file://$PROJECT_DIR$/interview/templates/interview/top.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+                <state relative-caret-position="150">
+                  <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
                 </state>
               </provider>
             </entry>
@@ -89,10 +58,10 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/interview/templates/interview/top.html">
+            <entry file="file://$PROJECT_DIR$/answer/templates/answer/top.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="59" />
+                <state relative-caret-position="227">
+                  <caret line="47" column="26" lean-forward="true" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
                 </state>
               </provider>
             </entry>
@@ -149,7 +118,6 @@
         <option value="$PROJECT_DIR$/company/templates/company/company_update.html" />
         <option value="$PROJECT_DIR$/answer/templates/answer/answer_register.html" />
         <option value="$PROJECT_DIR$/answer/templates/answer/answer_update.html" />
-        <option value="$PROJECT_DIR$/company/templates/company/top.html" />
         <option value="$PROJECT_DIR$/register/static/register/style.css" />
         <option value="$PROJECT_DIR$/register/templates/register/top.html" />
         <option value="$PROJECT_DIR$/register/views.py" />
@@ -163,19 +131,20 @@
         <option value="$PROJECT_DIR$/register/templates/register/user_create.html" />
         <option value="$PROJECT_DIR$/register/templates/register/user_create_complete.html" />
         <option value="$PROJECT_DIR$/register/templates/register/user_create_done.html" />
-        <option value="$PROJECT_DIR$/answer/templates/answer/top.html" />
-        <option value="$PROJECT_DIR$/interview/templates/interview/top.html" />
         <option value="$PROJECT_DIR$/answer/forms.py" />
         <option value="$PROJECT_DIR$/interview/forms.py" />
         <option value="$PROJECT_DIR$/interview/templates/interview/interview_register.html" />
         <option value="$PROJECT_DIR$/interview/templates/interview/interview_update.html" />
+        <option value="$PROJECT_DIR$/company/templates/company/top.html" />
+        <option value="$PROJECT_DIR$/interview/templates/interview/top.html" />
+        <option value="$PROJECT_DIR$/answer/templates/answer/top.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="24" />
-    <option name="y" value="23" />
-    <option name="width" value="1401" />
+    <option name="x" value="8" />
+    <option name="y" value="56" />
+    <option name="width" value="1432" />
     <option name="height" value="839" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -206,36 +175,9 @@
             <path>
               <item name="jobchange" type="b2602c69:ProjectViewProjectNode" />
               <item name="jobchange" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobchange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobchange" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="answer" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobchange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobchange" type="462c0819:PsiDirectoryNode" />
-              <item name="interview" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobchange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobchange" type="462c0819:PsiDirectoryNode" />
-              <item name="interview" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobchange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobchange" type="462c0819:PsiDirectoryNode" />
-              <item name="interview" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="interview" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobchange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobchange" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
+              <item name="answer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -321,13 +263,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57046000" />
+    <option name="totallyTimeSpent" value="58180000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="24" y="23" width="1401" height="839" extended-state="0" />
+    <frame x="8" y="56" width="1432" height="839" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14348786" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.021582734" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -612,24 +554,10 @@
     <entry file="file://$PROJECT_DIR$/company/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/company/templates/company/top.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/register/templates/register/base_auth.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/answer/templates/answer/top.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -674,18 +602,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/answer/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        <state relative-caret-position="120">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interview/templates/interview/top.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -707,6 +628,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company/templates/company/top.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="e#1327#1334#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interview/templates/interview/top.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/answer/templates/answer/top.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="47" column="26" lean-forward="true" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
         </state>
       </provider>
     </entry>

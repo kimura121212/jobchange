@@ -5,12 +5,50 @@
     <a class="btn btn-primary register_button_margin" href="{% url "answer:register" %}" role="button">新規登録</a>
     {% if answeres %}
     {% for answer in answeres %}
-        <div class="card margin_auto main_contets">
-          <h5 class="card-header text-center">{{ answer.question }}</h5>
+        <div class="card bg-light mb-3 margin_auto main_contets">
+          <h5 class="card-header text-center">
+              {% if answer.question %}
+                  　{{ answer.question }}
+              　{% else %}
+                  　登録なし
+              　{% endif %}
+          </h5>
           <div class="card-body">
-            <p class="card-text">{{ answer.answer }}</p>
+            <p class="card-text">
+                {% if answer.answer %}
+                  　{{ answer.answer }}
+              　{% else %}
+                  　登録なし
+              　{% endif %}
+            </p>
             <a class="btn btn-warning" href="{% url "answer:update" answer.id %}" role="button">変更</a>
-            <a class="btn btn-danger" href="{% url "answer:delete" answer.id %}" role="button">削除</a>
+          　<a class="btn btn-danger" href="#" role="button" data-toggle="modal" data-target="#exampleModal{{ answer.id }}">削除</a>
+
+              <!-- 削除モーダル -->
+                <div class="modal fade" id="exampleModal{{ answer.id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                          {% if answer.question %}
+                              「{{ answer.question }}」を本当に削除しますか？
+                          {% else %}
+                              本当に削除しますか？
+                          {% endif %}
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                        <a class="btn btn-danger" href="{% url "answer:delete" answer.id %}" role="button">削除</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
           </div>
         </div>
     {% endfor %}
