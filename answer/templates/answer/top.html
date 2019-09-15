@@ -1,16 +1,16 @@
 {% extends "register/base_auth.html" %}
 {% block content %}
     <h2 class="login_title">面接質問・回答登録</h2>
-    <p class="text-center">面接時によく聞かれる質問とそれに対する自分の回答を登録しておき、随時見直して、ブラッシュアップしてみましょう！</p>
-    <a href="{% url "answer:register" %}">新規登録</a>
+    <p class="text-center main_contets margin_auto">面接時によく聞かれる質問とそれに対する自分の回答を登録しておき、随時見直して、ブラッシュアップしてみましょう！</p>
+    <a class="btn btn-primary register_button_margin" href="{% url "answer:register" %}" role="button">新規登録</a>
     {% if answeres %}
     {% for answer in answeres %}
-        <div class="card">
-          <h5 class="card-header">{{ answer.question }}</h5>
+        <div class="card margin_auto main_contets">
+          <h5 class="card-header text-center">{{ answer.question }}</h5>
           <div class="card-body">
             <p class="card-text">{{ answer.answer }}</p>
-            <a href="{% url "answer:update" answer.id %}">変更</a>
-            <a href="{% url "answer:delete" answer.id %}">削除</a>
+            <a class="btn btn-warning" href="{% url "answer:update" answer.id %}" role="button">変更</a>
+            <a class="btn btn-danger" href="{% url "answer:delete" answer.id %}" role="button">削除</a>
           </div>
         </div>
     {% endfor %}
