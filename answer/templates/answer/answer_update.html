@@ -1,18 +1,26 @@
 {% extends "register/base_auth.html" %}
 {% block content %}
-    <div>質問・回答変更</div>
-<form method="post" action="">
-{% csrf_token %}
-    <div class="form-group">
-        <p>{{ form.errors.question }}</p>
-      　<label for="company_name">{{form.question.label}}</label>
-      　{{form.question}}
-  　</div>
-    <div class="form-group">
-    　  <p>{{ form.errors.answer }}</p>
-      　<label for="company_name">{{form.answer.label}}</label>
-      　{{form.answer}}
-  　</div>
-  <button type="submit" class="btn btn-primary">変更</button>
-</form>
+<div class="row">
+    <div class="card col-md-6 margin_auto">
+        <div class="card-body">
+            <h2 class="login_title">面接質問・回答編集</h2>
+            <p>面接時によく聞かれる質問とそれに対する自分の回答を登録しておき、随時見直して、ブラッシュアップしてみましょう！</p>
+            <form method="post" action="">
+            {% csrf_token %}
+                <div class="form-group">
+                    <p>{{ form.errors.question }}</p>
+                  　<label for="company_name">{{form.question.label}}</label>
+                  　{{form.question}}
+              　</div>
+                <div class="form-group">
+                　  <p>{{ form.errors.answer }}</p>
+                  　<label for="company_name">{{form.answer.label}}</label>
+                  　{{form.answer}}
+              　</div>
+              <button type="submit" class="btn btn-success btn-lg btn-block">変更</button>
+              <a href='{% url 'answer:top' %}'>質問・回答一覧へ</a>
+            </form>
+        </div>
+    </div>
+</div>
 {% endblock %}

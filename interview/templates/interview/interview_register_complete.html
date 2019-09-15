@@ -1,5 +1,12 @@
 {% extends "register/base_auth.html" %}
 {% block content %}
-    <p>面接登録が完了しました。</p>
-    <a href='{% url 'interview:top' company_id %}'>面接一覧へ</a>
+<div class="row">
+    <div class="card col-md-6 margin_auto">
+        <div class="card-body">
+            <h2 class="login_title">面接振り返り登録</h2>
+            <p>面接振り返り登録が完了しました。</p>
+            <a href='{% url 'interview:top' company_id %}'>振り返り一覧へ</a>
+        </div>
+    </div>
+</div>
 {% endblock %}
