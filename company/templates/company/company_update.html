@@ -1,12 +1,20 @@
 {% extends "register/base_auth.html" %}
 {% block content %}
-<form method="post" action="">
-{% csrf_token %}
-  <div class="form-group">
-      <p>{{ form.errors.company_name }}</p>
-      <label for="company_name">{{form.company_name.label}}</label>
-      {{form.company_name}}
-  </div>
-  <button type="submit" class="btn btn-primary">変更</button>
-</form>
+<div class="row">
+    <div class="card col-md-6 margin_auto">
+        <div class="card-body">
+            <h2 class="login_title">面接企業名変更</h2>
+            <p>企業名変更したい際は以下フォームに変更後の企業名を入力して下さい。</p>
+            <form method="post" action="">
+            {% csrf_token %}
+              <div class="form-group">
+                  <p>{{ form.errors.company_name }}</p>
+                  <label for="company_name">{{form.company_name.label}}</label>
+                  {{form.company_name}}
+              </div>
+              <button type="submit" class="btn btn-success btn-lg btn-block">変更</button>
+            </form>
+        </div>
+    </div>
+</div>
 {% endblock %}

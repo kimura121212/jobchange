@@ -1,5 +1,12 @@
 {% extends "register/base_auth.html" %}
 {% block content %}
-    <p>企業名変更が完了しました。</p>
-    <a href='{% url 'company:top' %}'>企業一覧へ</a>
+<div class="row">
+    <div class="card col-md-6 margin_auto">
+        <div class="card-body">
+            <h2 class="login_title">面接企業名変更</h2>
+            <p>企業名変更が完了しました。</p>
+            <a href='{% url 'company:top' %}'>企業一覧へ</a>
+        </div>
+    </div>
+</div>
 {% endblock %}
