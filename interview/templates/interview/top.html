@@ -1,16 +1,55 @@
 {% extends "register/base_auth.html" %}
 {% block content %}
-    <p>{{ company.company_name }}</p>
+    <h2 class="login_title">面接振り返り</h2>
+    <h5 class="login_title">{{ company.company_name }}</h5>
     <a href="{% url "interview:register" company.id  %}">新規登録</a>
     {% if interviewes %}
     {% for interview in interviewes %}
-        <div>選考フェーズ : {{ interview.selection_phase }}</div>
-        <div>選考日程 : {{ interview.selection_date }}</div>
-        <div>質問と覚えていればその回答 : {{ interview.question }}</div>
-        <div>振り返り : {{ interview.reflection }}</div>
-        <div>その他 : {{ interview.other }}</div>
-        <a href="{% url "interview:update" interview.id %}">変更</a>
-        <a href="{% url "interview:delete" interview.id %}">削除</a>
+        <div class="card bg-light mb-3 margin_auto">
+          <div class="card-header font-weight-bold">
+              {% if interview.selection_phase %}
+                  {{ interview.selection_phase }}
+              {% else %}
+                  登録なし
+              {% endif %}
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">★選考日程</h5>
+            <p class="card-text font-weight-bold">
+                {% if interview.selection_date %}
+                  {{ interview.selection_date }}
+              　{% else %}
+                  登録なし
+              　{% endif %}
+            </p>
+            <h5 class="card-title">★聞かれた質問・回答</h5>
+            <p class="card-text font-weight-bold">
+                {% if interview.question %}
+                  {{ interview.question}}
+              　{% else %}
+                  登録なし
+              　{% endif %}
+            </p>
+            <h5 class="card-title">★振り返り</h5>
+            <p class="card-text font-weight-bold">
+                {% if interview.reflection %}
+                  {{ interview.reflection}}
+              　{% else %}
+                  登録なし
+              　{% endif %}
+            </p>
+            <h5 class="card-title">★その他</h5>
+            <p class="card-text font-weight-bold">
+                {% if interview.other %}
+                  {{ interview.other}}
+              　{% else %}
+                  登録なし
+              　{% endif %}
+            </p>
+            <a href="{% url "interview:update" interview.id %}">変更</a>
+            <a href="{% url "interview:delete" interview.id %}">削除</a>
+          </div>
+        </div>
     {% endfor %}
     {% else %}
         <div>データがありません</div>

@@ -1,13 +1,18 @@
 {% extends "register/base_auth.html" %}
 {% block content %}
-    <p>質問・回答集</p>
+    <h2 class="login_title">面接質問・回答登録</h2>
+    <p class="text-center">面接時によく聞かれる質問とそれに対する自分の回答を登録しておき、随時見直して、ブラッシュアップしてみましょう！</p>
     <a href="{% url "answer:register" %}">新規登録</a>
     {% if answeres %}
     {% for answer in answeres %}
-        <div>質問 : {{ answer.question }}</div>
-        <div>回答 : {{ answer.answer }}</div>
-        <a href="{% url "answer:update" answer.id %}">変更</a>
-        <a href="{% url "answer:delete" answer.id %}">削除</a>
+        <div class="card">
+          <h5 class="card-header">{{ answer.question }}</h5>
+          <div class="card-body">
+            <p class="card-text">{{ answer.answer }}</p>
+            <a href="{% url "answer:update" answer.id %}">変更</a>
+            <a href="{% url "answer:delete" answer.id %}">削除</a>
+          </div>
+        </div>
     {% endfor %}
     {% else %}
         <div>データがありません</div>
