@@ -1,4 +1,4 @@
-{% extends "register/base_auth.html" %}
+{% extends "register/base.html" %}
 {% block content %}
     <h2 class="login_title">面接振り返り</h2>
     <h5 class="login_title">{{ company.company_name }}</h5>
@@ -53,6 +53,6 @@
         </div>
     {% endfor %}
     {% else %}
-        <div>データがありません</div>
+        <p class="text-center main_contets margin_auto">データがありません。</p>
     {% endif %}
 {% endblock %}

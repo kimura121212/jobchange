@@ -13,12 +13,12 @@ class AnswerRegisterForm(forms.ModelForm):
     question = forms.CharField(
         label='質問',
         required=False,
-        widget=forms.TextInput(attrs={'placeholder': '質問', 'class': 'form-control'})
+        widget=forms.Textarea(attrs={'placeholder': '質問', 'class': 'form-control'})
     )
     answer = forms.CharField(
         label='回答',
         required=False,
-        widget=forms.TextInput(attrs={'placeholder': '回答', 'class': 'form-control'})
+        widget=forms.Textarea(attrs={'placeholder': '回答', 'class': 'form-control'})
     )
 
 class AnswerUpdateForm(forms.ModelForm):
@@ -33,10 +33,10 @@ class AnswerUpdateForm(forms.ModelForm):
     question = forms.CharField(
         label='質問',
         required=False,
-        widget=forms.TextInput(attrs={'placeholder': '質問', 'class': 'form-control'})
+        widget=forms.Textarea(attrs={'placeholder': '質問', 'class': 'form-control'})
     )
     answer = forms.CharField(
         label='回答',
         required=False,
-        widget=forms.TextInput(attrs={'placeholder': '回答', 'class': 'form-control'})
+        widget=forms.Textarea(attrs={'placeholder': '回答', 'class': 'form-control'})
     )

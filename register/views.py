@@ -30,7 +30,7 @@ class Login(LoginView):
 
 class Logout(LoginRequiredMixin, LogoutView):
     """ログアウト"""
-    template_name = 'company/top.html'
+    template_name = 'register/logout.html'
 
 
 class UserCreate(generic.CreateView):

@@ -1,0 +1,14 @@
+{% extends "register/base_auth.html" %}
+{% block content %}
+<div class="row">
+    <div class="card col-md-6 margin_auto">
+        <div class="card-body">
+            <h2 class="login_title">ログアウト</h2>
+            <p>
+                ログアウトしました。<br>
+                <a class="" href="{% url 'register:login' %}">ログインはこちら</a>
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

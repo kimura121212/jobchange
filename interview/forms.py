@@ -22,22 +22,22 @@ class InterviewRegisterForm(forms.ModelForm):
     selection_date = forms.DateTimeField(
         label='選考日程',
         required=False,
-        widget=forms.TextInput(attrs={'placeholder': '選考日程', 'class': 'form-control'})
+        widget = forms.DateInput(attrs={"type": "date", 'placeholder': '選考日程', 'class': 'form-control'})
     )
     question = forms.CharField(
         label='質問',
         required=False,
-        widget=forms.TextInput(attrs={'placeholder': '質問', 'class': 'form-control'})
+        widget=forms.Textarea(attrs={'placeholder': '質問', 'class': 'form-control'})
     )
     reflection = forms.CharField(
         label='振り返り',
         required=False,
-        widget=forms.TextInput(attrs={'placeholder': '振り返り', 'class': 'form-control'})
+        widget=forms.Textarea(attrs={'placeholder': '振り返り', 'class': 'form-control'})
     )
     other = forms.CharField(
         label='その他',
         required=False,
-        widget=forms.TextInput(attrs={'placeholder': 'その他', 'class': 'form-control'})
+        widget=forms.Textarea(attrs={'placeholder': 'その他', 'class': 'form-control'})
     )
 
 class InterviewUpdateForm(forms.ModelForm):
@@ -61,20 +61,20 @@ class InterviewUpdateForm(forms.ModelForm):
     selection_date = forms.DateTimeField(
         label='選考日程',
         required=False,
-        widget=forms.TextInput(attrs={'placeholder': '選考日程', 'class': 'form-control'})
+        widget = forms.DateInput(attrs={"type": "date", 'placeholder': '選考日程', 'class': 'form-control'})
     )
     question = forms.CharField(
         label='質問',
         required=False,
-        widget=forms.TextInput(attrs={'placeholder': '質問', 'class': 'form-control'})
+        widget=forms.Textarea(attrs={'placeholder': '質問', 'class': 'form-control'})
     )
     reflection = forms.CharField(
         label='振り返り',
         required=False,
-        widget=forms.TextInput(attrs={'placeholder': '振り返り', 'class': 'form-control'})
+        widget=forms.Textarea(attrs={'placeholder': '振り返り', 'class': 'form-control'})
     )
     other = forms.CharField(
         label='その他',
         required=False,
-        widget=forms.TextInput(attrs={'placeholder': 'その他', 'class': 'form-control'})
+        widget=forms.Textarea(attrs={'placeholder': 'その他', 'class': 'form-control'})
     )
