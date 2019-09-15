@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2bd32518-a0ea-40a8-88bc-6e2117666e01" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/answer/templates/answer/answer_register.html" beforeDir="false" afterPath="$PROJECT_DIR$/answer/templates/answer/answer_register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/answer/templates/answer/answer_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/answer/templates/answer/answer_update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/answer/templates/answer/top.html" beforeDir="false" afterPath="$PROJECT_DIR$/answer/templates/answer/top.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/company/templates/company/top.html" beforeDir="false" afterPath="$PROJECT_DIR$/company/templates/company/top.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interview/templates/interview/top.html" beforeDir="false" afterPath="$PROJECT_DIR$/interview/templates/interview/top.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,11 +17,20 @@
     <splitter split-orientation="horizontal" split-proportion="0.48466256">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/answer/templates/answer/top.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+                <state relative-caret-position="135">
+                  <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/company/templates/company/top.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="195">
+                  <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
@@ -38,8 +42,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/register/static/register/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="200">
-                  <caret line="40" column="4" lean-forward="true" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+                <state relative-caret-position="170">
+                  <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
                 </state>
               </provider>
             </entry>
@@ -128,12 +132,12 @@
         <option value="$PROJECT_DIR$/interview/templates/interview/interview_update_complete.html" />
         <option value="$PROJECT_DIR$/company/templates/company/company_register.html" />
         <option value="$PROJECT_DIR$/company/templates/company/company_update.html" />
-        <option value="$PROJECT_DIR$/company/templates/company/top.html" />
         <option value="$PROJECT_DIR$/answer/templates/answer/answer_register.html" />
         <option value="$PROJECT_DIR$/answer/templates/answer/answer_update.html" />
         <option value="$PROJECT_DIR$/answer/templates/answer/top.html" />
         <option value="$PROJECT_DIR$/interview/templates/interview/top.html" />
         <option value="$PROJECT_DIR$/register/static/register/style.css" />
+        <option value="$PROJECT_DIR$/company/templates/company/top.html" />
       </list>
     </option>
   </component>
@@ -174,6 +178,24 @@
               <item name="answer" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="answer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobchange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobchange" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobchange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobchange" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobchange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobchange" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jobchange" type="b2602c69:ProjectViewProjectNode" />
@@ -271,12 +293,12 @@
       <workItem from="1568280822110" duration="1818000" />
       <workItem from="1568296987315" duration="11535000" />
       <workItem from="1568358671991" duration="13776000" />
-      <workItem from="1568476979051" duration="10088000" />
+      <workItem from="1568476979051" duration="10238000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53426000" />
+    <option name="totallyTimeSpent" value="53576000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="28" width="1335" height="839" extended-state="0" />
@@ -650,13 +672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/company/templates/company/top.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/answer/templates/answer/answer_register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -671,17 +686,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/register/static/register/style.css">
+    <entry file="file://$PROJECT_DIR$/answer/templates/answer/top.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="40" column="4" lean-forward="true" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+        <state relative-caret-position="135">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/answer/templates/answer/top.html">
+    <entry file="file://$PROJECT_DIR$/register/static/register/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        <state relative-caret-position="170">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company/templates/company/top.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
         </state>
       </provider>
     </entry>
