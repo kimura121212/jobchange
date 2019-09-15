@@ -83,7 +83,7 @@ class InterviewUpdate(generic.TemplateView):
             interview.reflection = reflection
             interview.other = other
             interview.save()
-            return redirect('interview:update_complete')
+            return render(request, 'interview/interview_update_complete.html', {'interview': interview})
         return render(request, self.template_name, {'form': form})
 
 
@@ -96,5 +96,6 @@ class InterviewDelete(generic.TemplateView):
 
     def get(self, request, *args, **kwargs):
         pk = self.kwargs['pk']
+        company = Interview.objects.get(id=pk)
         Interview.objects.get(id=pk).delete()
-        return render(request, self.template_name)
+        return render(request, self.template_name, {'company': company})
