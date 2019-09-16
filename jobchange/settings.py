@@ -139,3 +139,10 @@ LOGIN_REDIRECT_URL = 'company:top'
 
 # メール設定
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')

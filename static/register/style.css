@@ -1,0 +1,79 @@
+body{
+    background-color:#F2F2F2!important;
+}
+
+/* /(トップページ) */
+.top{
+    height:100vh;
+    background-image: url("background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.top_title{
+    font-weight: bold;
+    font-size:4rem;
+    color: #ffffff;
+}
+.top_contents{
+    text-align: center;
+    padding-top: 30%;
+}
+@media screen and (max-width: 640px){
+    .top_contents{
+        padding-top: 50%;
+    }
+}
+@media screen and (min-width: 640px){
+    .top_contents{
+        padding-top: 15%;
+    }
+}
+.top_button{
+    width: 300px;
+}
+/* /(トップページ) */
+.margin_auto{
+    margin:auto;
+}
+
+/* /login(ログインページ) */
+.hr{
+    border-color: #ffffff;
+}
+.login_title{
+    text-align: center;
+    font-weight:bold;
+}
+.login_link{
+    display: block;
+    text-align: center;
+}
+/* /login(ログインページ) */
+
+@media screen and (max-width: 768px) {
+    .main_contets{
+        width:100%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .main_contets{
+        width:50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .register_button_margin{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .register_button_margin{
+        margin-left: 25%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 50%;
+    }
+}
