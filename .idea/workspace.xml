@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2bd32518-a0ea-40a8-88bc-6e2117666e01" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/jobchange/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobchange/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="2bd32518-a0ea-40a8-88bc-6e2117666e01" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,11 +79,20 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/jobchange/settings.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="286">
                   <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
                 </state>
               </provider>
             </entry>
@@ -121,7 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/company/urls.py" />
         <option value="$PROJECT_DIR$/company/views.py" />
         <option value="$PROJECT_DIR$/interview/urls.py" />
         <option value="$PROJECT_DIR$/interview/models.py" />
@@ -172,6 +178,7 @@
         <option value="$PROJECT_DIR$/interview/templates/interview/interview_update_complete.html" />
         <option value="$PROJECT_DIR$/interview/views.py" />
         <option value="$PROJECT_DIR$/jobchange/settings.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -319,12 +326,12 @@
       <workItem from="1568358671991" duration="13776000" />
       <workItem from="1568476979051" duration="10359000" />
       <workItem from="1568541097014" duration="3349000" />
-      <workItem from="1568568440828" duration="1293000" />
+      <workItem from="1568568440828" duration="1433000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60302000" />
+    <option name="totallyTimeSpent" value="60442000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="246" y="23" width="1194" height="839" extended-state="0" />
@@ -357,13 +364,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/register/templates/register/mail_template/create/message.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/register/templates/register/mail_template/password_reset/subject.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -717,6 +717,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
