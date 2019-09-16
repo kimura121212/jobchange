@@ -25,7 +25,7 @@ SECRET_KEY = 'i2c0eqb25a@onkxlb3esrnyf#-pv^j3a69mh+kck^)zct6d3zd'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['18.223.190.241']
 
 
 # Application definition
